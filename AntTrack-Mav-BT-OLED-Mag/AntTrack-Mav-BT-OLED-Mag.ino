@@ -61,8 +61,9 @@ struct Vector hc_vector = {
 Servo azServo; // Azimuth
 Servo elServo; // Elevation
 
+// ----------------
 // Mavlink Messages
-
+// ----------------
 // Message #0  HEARTHBEAT 
 
 // Message #24  GPS_RAW_INT 
@@ -74,11 +75,11 @@ int32_t    ap_longitude = 0;          // 7 assumed decimal places
 int32_t    ap_amsl24 = 0;             // 1000 = 1m 
 
 // Message GLOBAL_POSITION_INT ( #33 ) (Filtered)
-int32_t ap_lat;            // Latitude, expressed as degrees * 1E7
-int32_t ap_lon;            // Longitude, expressed as degrees * 1E7
-int32_t ap_amsl33;         // Altitude above mean sea level (millimeters)
-int32_t ap_alt_ag;         // Altitude above ground (millimeters)
-uint16_t ap_hdg;           // Vehicle heading (yaw angle) in degrees * 100, 0.0..359.99 degrees
+int32_t    ap_lat;            // Latitude, expressed as degrees * 1E7
+int32_t    ap_lon;            // Longitude, expressed as degrees * 1E7
+int32_t    ap_amsl33;         // Altitude above mean sea level (millimeters)
+int32_t    ap_alt_ag;         // Altitude above ground (millimeters)
+uint16_t   ap_hdg;           // Vehicle heading (yaw angle) in degrees * 100, 0.0..359.99 degrees
 
 
 void setup()
